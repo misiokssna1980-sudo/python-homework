@@ -1,4 +1,5 @@
 def month_to_season(month):
+
     if month in [12, 1, 2]:
         return "Зима"
     elif month in [3, 4, 5]:
@@ -7,5 +8,7 @@ def month_to_season(month):
         return "Лето"
     elif month in [9, 10, 11]:
         return "Осень"
-    else:
-        return "Неверный номер месяца"
+
+
+print(month_to_season(12))  # Выведет "Зима"
+print(month_to_season(4))  # Выведет "Весна"

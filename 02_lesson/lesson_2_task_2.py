@@ -1,12 +1,13 @@
 def is_year_leap(year):
-    if year % 4 == 0:
-        return True
-    else:
-        return False
+    return year % 4 == 0
 
 
-check_year = 2024
+year1 = 2024
+year2 = 2025
 
-result = is_year_leap(check_year)
 
-print(f"год {check_year}: {result}")
+result1 = is_year_leap(year1)
+result2 = is_year_leap(year2)
+
+print(f"год {year1}: {result1}")
+print(f"год {year2}: {result2}")
