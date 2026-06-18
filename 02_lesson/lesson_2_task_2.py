@@ -5,8 +5,7 @@ def is_year_leap(year):
         return False
 
 
-check_year = 2024
+year = 2024
+result = is_year_leap(year)
+print(f"год {year}: {result}")
 
-result = is_year_leap(check_year)
-
-print(f"год {check_year}: {result}")

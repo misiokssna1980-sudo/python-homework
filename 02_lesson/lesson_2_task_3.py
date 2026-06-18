@@ -2,8 +2,7 @@ import math
 
 
 def square(side):
-    area = side * side
-    return math.ceil(area)
+    return math.ceil(side * side)
 
 
 print(f"Сторона 5: площадь = {square(5)}")
