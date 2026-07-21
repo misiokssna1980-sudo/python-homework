@@ -1,4 +1,5 @@
 [
+<<<<<<< HEAD
   "05_lesson/test_lesson05_task1.py::test_form_submission",
   "05_lesson/test_lesson05_task2.py::test_form_submission",
   "05_lesson/test_lesson05_task3.py::test_multiple_elements",
@@ -46,4 +47,7 @@
   "Lesson4/test_string_utils.py::test_trim_negative[ -]",
   "Lesson4/test_string_utils.py::test_trim_negative[-]",
   "Lesson4/test_string_utils.py::test_trim_negative_none"
+=======
+  "Lesson4/test_example.py::test_addition"
+>>>>>>> 0eaba32f2818be16401021d99d9dfe1c3614f10b
 ]
