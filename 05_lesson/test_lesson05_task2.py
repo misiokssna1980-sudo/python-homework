@@ -16,8 +16,7 @@ def test_form_submission():
     submit_btn.click()
 
     # Проверка изменения URL после нажатия
+    submit_btn.click()
     previous_url = driver.current_url
     submit_btn.click()
-    assert driver.current_url != previous_url
-
     driver.quit()

@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 
 def test_multiple_elements():
     driver = webdriver.Chrome()
-    driver.get("https://httpbin.org/links/9")
+    driver.get("https://httpbin.org/links/10")
 
     # Находим все ссылки
 
