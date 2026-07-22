@@ -2,21 +2,16 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
-def test_form_submission():
+def test_navigation():
     driver = webdriver.Chrome()
-    driver.get("https://httpbin.org/forms/post")
-
+    driver.get("https://httpbin.org/")
     driver.maximize_window()
-    # Заполнение поля "custname" значением "Оксана"
-    name_field = driver.find_element(By.NAME, "custname")
-    name_field.send_keys("Оксана")
-    previous_url = driver.current_url
-    # Поиск кнопки отправки и клик на нее
-    submit_btn = driver.find_element(By.XPATH, "//button[text()='Submit']")
-    submit_btn.click()
-
-    # Проверка изменения URL после нажатия
-    new_url = driver.current_url
-    assert new_url != previous_url, "URL не изменился после отправки формы"
+    driver.find_element(By.LINK_TEXT, "HTML Forms").click()
+    assert driver.current_url.endswith("/forms/post")
+    print(driver.current_url.endswith("/forms/post"))
+    driver.back()
+    assert driver.current_url == "https://httpbin.org/"
+    print(driver.current_url)
+    # Ваш код здесь
 
     driver.quit()
